@@ -1,0 +1,14 @@
+fact = int(input("Enter the number: "))
+
+ans = 1
+i = 1
+
+if(fact < 0):
+    print(f"No factorial exists for {fact}")
+elif(fact == 0):
+    print(f"The factorial of {fact} is {ans}")
+elif(fact > 0):
+    while(i <= fact):
+        ans = ans*i
+        i+=1
+    print(f"The factorial of {fact} is {ans}")
