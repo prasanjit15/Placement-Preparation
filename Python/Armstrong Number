@@ -1,0 +1,32 @@
+def counter(d):
+    count = 0
+    while(d!=0):
+        d = int(d/10)
+        count += 1
+    return count
+
+def arm(num):
+    n = counter(num)
+    h = num
+    res = 0
+    while(num):
+        f = int(num%10)
+        res = res + (f ** n)
+        num = int(num/10)
+
+    if(res == h):
+        return 0
+    else:
+        return 1
+
+
+
+
+a = int(input("Enter the number: "))
+gh = arm(a)
+
+if(gh == 0):
+    print(f"{a} is an armstrong number")
+else:
+    print(f"{a} is not an armstrong number")
+
