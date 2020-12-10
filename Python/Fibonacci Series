@@ -1,0 +1,24 @@
+def fibo(k):
+    a = 0
+    b = 1
+    c = 0
+
+    if(k <= 1):
+        print(a)
+    else:
+        print(f"{a} {b}", end = ' ')
+
+        i = 3
+        while(i>=3 and i<=k):
+            c = a+b
+            a = b
+            b = c
+            print(f"{c}", end = ' ')
+            i+=1
+
+def main():
+    k = int(input("Enter the length of the fibonacci series you want: "))
+    print(f"The fibonacci series of length {k} is ")
+    fibo(k)
+
+main()
