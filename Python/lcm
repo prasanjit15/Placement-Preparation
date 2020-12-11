@@ -1,0 +1,17 @@
+def hcf(a, b):
+    if(b == 0):
+        return a
+
+    return hcf(b, a%b)
+
+def lcm(c, d):
+    return (int((c*d)/hcf(c, d)))
+
+
+print("Enter two numbers: ")
+num1 = int(input())
+num2 = int(input())
+
+gh = lcm(num1, num2)
+
+print(f"The GCD/HCF of {num1} & {num2} is {gh}")
