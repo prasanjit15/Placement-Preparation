@@ -1,0 +1,11 @@
+gh = int(input("Enter the number: "))
+
+tp = gh
+sum = 0
+
+while(gh):
+    n = int(gh%10)
+    sum += n
+    gh = int(gh/10)
+
+print(f"The sum of digits of {tp} is: {sum}")
