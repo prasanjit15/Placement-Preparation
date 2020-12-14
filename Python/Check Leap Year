@@ -1,0 +1,12 @@
+def check(f):
+    if((f%4 == 0 and f%100 != 0) or f%400 == 0):
+        return 1
+    else:
+        return 0
+
+gh = int(input("Enter the year: "))
+
+if(check(gh) != 1):
+    print(f"{gh} is not a leap year!")
+else:
+    print(f"{gh} is a leap year!")
