@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main(){
+    int gh;
+    cout<<"Enter the number: ";
+    cin>>gh;
+    int out = 0;
+
+    while(gh){
+        int n = gh % 10;
+        out = (out * 10) + n;  
+        gh = gh/10;
+    }
+
+    cout<<"The reversed number is: "<<out<<endl;
+
+    return 0;
+}
